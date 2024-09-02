@@ -1,0 +1,289 @@
+
+/*-------------------------------------------
+	Verification
+-------------------------------------------*/
+
+
+#verification {
+
+	display: none;
+
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	// background: red;
+	background: $black url(../img/verification-background.jpg) center center no-repeat fixed;
+	background-size: cover;
+	z-index: 9998;
+
+	.frame {
+
+		position: absolute;
+		left: 20px;
+		top: 20px;
+		right: 20px;
+		bottom: 40px;
+		background: rgba($black, 0.90);
+		z-index: 1;
+
+		@media screen and (min-width: 500px) {
+
+			left: 40px;
+			top: 40px;
+			right: 40px;
+			bottom: 40px;
+
+		}
+
+		@media screen and (min-width: 800px) {
+
+			left: 60px;
+			top: 60px;
+			right: 60px;
+			bottom: 60px;
+
+		}
+
+		&:before {
+
+			content: "";
+
+			position: absolute;
+			left: -6px;
+			top: -1px;
+			right: -6px;
+			bottom: -1px;
+			border: 1px solid $primary-color;
+			z-index: -1;
+
+		}
+
+		&:after {
+
+			content: "";
+
+			position: absolute;
+			left: -1px;
+			top: -6px;
+			right: -1px;
+			bottom: -6px;
+			border: 1px solid $primary-color;
+			z-index: -1;
+
+		}
+
+	}
+
+		.verification {
+
+			display: table;
+			width: 100%;
+			height: 100%;
+			// background: purple;
+
+			.inner-wrap {
+
+				display: table-cell;
+				padding: 0 20px;
+				vertical-align: middle;
+				// background: silver;
+
+				@media screen and (min-width: 500px) {
+
+					padding: 0 40px;
+
+				}
+
+			}
+
+		}
+
+				#link {}
+
+				.form {}
+
+					.logo {
+
+						display: block;
+						margin: 0 0 30px 0;
+
+						@media screen and (min-width: 440px) {
+
+							margin: 0 0 60px 0;
+
+						}
+
+						img {
+
+							width: 100%;
+							max-width: 340px;
+							margin: 0 auto;
+
+						}
+
+					}
+
+					form {}
+
+						fieldset {}
+
+							legend {
+
+								@media screen and (min-width: 440px) {
+
+									@include font-size(18);
+
+								}
+
+							}
+
+								.form-wrap {
+
+									width: 100%;
+									max-width: 390px;
+									margin: 20px auto 0 auto;
+
+									@media screen and (min-width: 440px) {
+
+										margin: 40px auto 0 auto;
+										@include group;
+
+									}
+
+								}
+
+									ol {
+
+										@include group;
+
+										@media screen and (min-width: 440px) {
+
+											float: left;
+											width: 70%;
+											padding: 0 24px 0 0;
+
+										}
+
+									}	
+
+										li {}
+
+											label {
+
+												display: none;
+
+											}
+
+											input {
+
+												@media screen and (min-width: 440px) {
+
+													height: 50px;
+
+												}
+
+											}				
+
+										.month {
+
+											float: left;
+											width: 25%;
+
+											input {
+
+												border-right: none;
+
+											}
+
+										}
+
+										.day {
+
+											float: left;
+											width: 25%;
+
+											input {
+
+												border-right: none;
+
+											}
+
+										}
+
+										.year {
+
+											float: left;
+											width: 50%;
+
+										}
+
+									button {
+
+										width: 100%;
+										max-width: 150px;
+										margin: 20px auto 0 auto;
+
+										@media screen and (min-width: 440px) {
+
+											height: 50px;
+											margin: 40px auto 0 auto;
+
+										}
+
+										@media screen and (min-width: 440px) {
+
+											float: right;
+											width: 30%;
+											margin: 0;
+
+										}
+
+									}
+
+					#error {
+
+						text-align: center;
+						color: rgb(182, 51, 41);
+
+						p {
+
+							margin: 12px 0 0 0;
+
+							@media screen and (min-width: 440px) {
+
+								margin: 25px 0 0 0;
+
+							}
+
+						}
+
+					}
+
+					.note {
+
+						margin: 37px 0 0 0;
+						@include font-size(14);
+						@include crimson-text-italic;
+						text-align: center;
+
+						@media screen and (min-width: 440px) {
+
+							margin: 75px 0 0 0;
+
+						}
+
+						span {
+
+							@media screen and (min-width: 350px) {
+
+								display: block;
+
+							}
+
+						}
+
+					}
+
+}

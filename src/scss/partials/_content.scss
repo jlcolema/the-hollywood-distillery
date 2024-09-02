@@ -1,0 +1,286 @@
+
+/*-------------------------------------------
+	Content
+-------------------------------------------*/
+
+
+#content {
+
+	display: table;
+	width: 100%;
+	height: 100%;
+	background: rgba($black, 0.90);
+
+	.inner-wrap {
+
+		display: table-cell;
+		padding: 0 20px;
+		vertical-align: middle;
+		// background: blue;
+
+		@media screen and (min-width: 500px) {
+
+			padding: 0 40px;
+
+		}
+
+	}
+
+		.form {}
+
+			form {}
+
+				fieldset {}
+
+					legend {
+
+						@media screen and (min-width: 440px) {
+
+							@include font-size(18);
+
+						}
+
+						&:before {
+
+							content: "";
+							display: block;
+							width: 40px;
+							height: 40px;
+							margin: 0 auto 12px auto;
+							background: url(../img/mark.svg) 0 0 no-repeat;
+							background-size: 40px 40px;
+
+							@media screen and (min-width: 440px) {
+
+								width: 60px;
+								height: 60px;
+								margin: 0 auto 26px auto;
+								background-size: 60px 60px;
+
+							}
+
+						}
+
+						span {
+
+							display: block;
+
+						}
+
+					}
+
+					.indicates-required {
+
+						// Temporarily hidden...
+
+						display: none;
+
+						span {}
+
+					}
+
+					ol {
+
+						width: 100%;
+						max-width: 500px;
+						margin: 20px auto;
+						padding: 0;
+						list-style: none;
+
+						@media screen and (min-width: 440px) {
+
+							margin: 40px auto;
+							@include group;
+
+						}
+
+					}
+
+						li {
+
+							@media screen and (min-width: 440px) {
+
+								position: relative;
+								float: left;
+								width: 50%;
+
+							}
+
+							&:first-of-type {
+
+								margin: 0 0 12px 0;
+
+								@media screen and (min-width: 440px) {
+
+									margin: 0;
+									padding: 0 12px 0 0;
+
+								}
+
+							}
+
+							&:last-of-type {
+
+								@media screen and (min-width: 440px) {
+
+									padding: 0 0 0 12px;
+
+								}
+
+							}
+
+						}
+
+							label {
+
+								display: none;
+
+							}
+
+							input {
+
+								@media screen and (min-width: 440px) {
+
+									height: 50px;
+
+								}
+
+								&.mce_inline_error {
+
+									border-color: rgb(182, 51, 41) !important;
+
+								}
+
+							}
+
+							div.mce_inline_error {
+
+								font-weight: normal !important;
+								background: rgb(182, 51, 41) !important;
+
+							}
+
+						.first-name {}
+
+						.last-name {
+
+							// Temporarily hidden...
+
+							display: none;
+
+						}
+
+						.email-address {}
+
+				.mce-responses {}
+
+					.response {
+
+						margin: 0 0 40px 0;
+						// background: pink;
+						@include font-size(14);
+						text-align: center;
+
+					}
+
+					#mce-error-response {}
+
+					#mce-success-response {}
+
+				button {
+
+					width: 100%;
+					max-width: 150px;
+					margin: 0 auto;
+
+					@media screen and (min-width: 440px) {
+
+						height: 50px;
+
+					}
+
+				}
+
+}
+
+		.connect {
+
+			position: fixed;
+			// top: 50px;
+			top: 33px;
+			// right: 54px;
+			right: 34px;
+			z-index: 1;
+
+			@media screen and (min-width: 500px) {
+
+				top: 70px;
+				right: 74px;
+
+			}
+
+			@media screen and (min-width: 800px) {
+
+				top: 90px;
+				right: 94px;
+
+			}
+
+			ul {
+
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				@include group;
+
+			}
+
+				li {
+
+					float: left;
+					margin: 0 12px 0 0;
+					@include hide-text;
+
+					&:last-of-type {
+
+						margin: 0;
+
+					}
+
+				}
+
+					a {
+
+						display: block;
+						width: 30px;
+						height: 30px;
+						background: url(../img/social-media.svg) 0 0 no-repeat;
+						background-size: 60px 30px;
+
+						&:hover {}
+
+					}
+
+				.facebook {
+
+					a {
+
+						&:hover {}
+
+					}
+
+				}
+
+				.instagram {
+
+					a {
+
+						background-position: -30px 0;
+
+						&:hover {}
+
+					}
+
+				}
+
+		}

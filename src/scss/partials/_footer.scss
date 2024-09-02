@@ -1,0 +1,29 @@
+
+/*-------------------------------------------
+	Footer
+-------------------------------------------*/
+
+
+#footer {}
+
+	.copyright {
+
+		position: fixed;
+		left: 0;
+		bottom: 13px;
+		width: 100%;
+		@include font-size(9);
+		line-height: 1.3333333333;
+		@include reem-kufi-regular;
+		text-transform: uppercase;
+		text-align: center;
+		letter-spacing: 2px;
+		z-index: 9999;
+
+		@media screen and (min-width: 800px) {
+
+			bottom: 23px;
+
+		}
+
+	}
